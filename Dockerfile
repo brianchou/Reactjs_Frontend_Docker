@@ -1,4 +1,4 @@
-3# Container image that runs your code
+# Container image that runs your code
 FROM ubuntu:20.04
 
 RUN ["apt-get", "update"]
