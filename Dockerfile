@@ -5,6 +5,8 @@ RUN ["apt-get", "update"]
 
 RUN ["apt-get", "-y", "install", "nodejs"]
 
+RUN npm install npm@latest -g
+
 RUN cd /
 
 RUN npx create-react-app reactjs-frontend-docker
