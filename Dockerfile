@@ -5,11 +5,11 @@ RUN ["apt-get", "update"]
 
 RUN ["apt-get", "-y", "install", "nodejs"]
 
-RUN ["cd", "/"]
+RUN ["chdir", "/"]
 
 RUN ["npx", "create-react-app", "reactjs-frontend-docker"]
 
-RUN ["cd", "/reactjs-frontend-docker"]
+RUN ["chdir", "/reactjs-frontend-docker"]
 
 RUN ["npm", "install", "bootstrap"]
 
