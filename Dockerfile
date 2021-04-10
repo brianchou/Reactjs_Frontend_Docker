@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER Brian Chou
 
-RUN apt-get install npm
+RUN sudo apt-get install npm
 
 RUN cd /
 
