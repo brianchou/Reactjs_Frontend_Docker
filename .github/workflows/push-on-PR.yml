@@ -2,7 +2,8 @@ name: Publish Docker Image while push on PR
 
 on:
   push:
-    branches: [ PR ]
+    branches:
+      - PR
 
 jobs:
   push_to_registry:
