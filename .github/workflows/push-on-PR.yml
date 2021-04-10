@@ -10,8 +10,6 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-20.04
     steps:
-      - name: Change Directory
-        run: cd ${{ secrets.WORK_DIRECTORY }}
       - name: Check out the repo
         uses: actions/checkout@v2
       - name: Push to Docker Hub
