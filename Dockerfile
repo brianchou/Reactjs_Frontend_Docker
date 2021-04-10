@@ -7,15 +7,15 @@ RUN ["apt-get", "-y", "install", "nodejs"]
 
 RUN cd /
 
-RUN ["npx", "create-react-app", "reactjs-frontend-docker"]
+RUN npx create-react-app reactjs-frontend-docker
 
 RUN cd /reactjs-frontend-docker
 
-RUN ["npm", "install", "bootstrap"]
+RUN npm install bootstrap
 
-RUN ["npx", "install", "react-router-dom"]
+RUN npx install react-router-dom
 
-RUN ["npx", "install", "axios"]
+RUN npx install axios
 
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
