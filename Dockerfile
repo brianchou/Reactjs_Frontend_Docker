@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 RUN ["apt-get", "update"]
 
-RUN ["apt-get", "-y", "install", "npm"]
+RUN ["apt-get", "install", "npm"]
 
 RUN ["cd", "/"]
 
