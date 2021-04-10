@@ -5,7 +5,7 @@
 
 sh -c "sudo apt-get update"
 
-sh -c "apt-get install npm"
+sh -c "sudo apt-get install npm"
 
 sh -c "cd /"
 
