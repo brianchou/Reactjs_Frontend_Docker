@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          path: test
+          node-version: '14'
+          check-latest: true
+      - run: npm install
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
